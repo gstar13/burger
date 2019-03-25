@@ -1,0 +1,24 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "In this program we will use employ the npm package express-handlebars to create , read , update and delete data using direction and input from the user. This program will employ an orm.js file and to a controller file to direct the user through the program. This file is our first exploration of the MVC or model view controller concept .",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gstar13/burger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gstar13/burger/issues"
+  },
+  "homepage": "https://github.com/gstar13/burger#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.16.0"
+  }
+}
