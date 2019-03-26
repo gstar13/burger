@@ -29,9 +29,12 @@ router.post("/", function (req, res) {
         ], function () {
             res.redirect("/");
         });
+        console.log(req.body.devoured);
 });
 router.put("/:id", function (req, res) {
+    console.log(req);
     var condition = "id = " + req.params.id;
+    console.log(condition + "put");
     console.log("condition", condition);
     burger.update({
         devoured: req.body.devoured
@@ -42,7 +45,7 @@ router.put("/:id", function (req, res) {
 });
 router.delete("/:id", function (req, res) {
     var condition = "id = " + req.params.id;
-
+console.log(condition+ "delete");
     burger.delete(condition, function () {
         res.redirect("/");
     });

@@ -4,6 +4,7 @@ li {
     margin: 15px;
     background: #ffffff;
     list-style: none;
+    width: 50%
   }
   
   ul {
@@ -21,9 +22,13 @@ li {
   .right {
       align-content: right;
   }
-  
+  #devour {
+      float:right;
+      margin-left: 25px;
+  }
   img {
       align-content: center;
+      margin-top: 65px;
   }
   
   h1 {
@@ -32,7 +37,8 @@ li {
   }
   
   h2 {
-      text-align: center;
+      margin-left: 250px;
+      text-align: left;
       text-shadow: 2px 2px #ffffff;
   }
   
@@ -41,6 +47,7 @@ li {
     margin: 25px;
     background: #eceff1;
     border: 1px black solid;
+    width: 50%
   }
   
   .form-group {
@@ -49,6 +56,7 @@ li {
   
   .btn-primary {
       border-radius: 15px;
+      color: red;
   }
   
   html, body{
@@ -60,7 +68,7 @@ li {
       background-repeat:  no-repeat;
       background-attachment: fixed;
       background-size:  cover;
-      background-color: #d6730a;  
+      background-color: #723dee;  
   }
   
   div, body{
@@ -89,3 +97,4 @@ li {
     color: #fff;
     padding: 0.5em;
   }
+  

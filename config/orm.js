@@ -1,19 +1,6 @@
 //import mysql connection
 var connection = require("../config/connection.js");
 console.log("made it to orm.js");
-// create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
-// object for all our SQL statement function.
-// var orm = {
-//     all:function(tableInput, cb) {
-//         var queryString= "SELECT * FROM " + tableInput + ";";
-//     }
-// }
-// function 
-// selectAll();
-// insertOne()
-// updateOne()
-
-
 
 // Helper function for SQL syntax.
 // Let's say we want to pass 3 values into the mySQL query.
@@ -43,8 +30,7 @@ function printQuestionMarks(num) {
         if (typeof value === "string" && value.indexOf(" ") >= 0) {
           value = "'" + value + "'";
         }
-        // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-        // e.g. {sleepy: true} => ["sleepy=true"]
+       
         arr.push(key + "=" + value);
       }
     }
@@ -86,7 +72,7 @@ var orm = {
       });
     },
   
-  // An example of objColVals would be {name: panther, sleepy: true}
+ 
   update: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 
