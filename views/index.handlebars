@@ -12,7 +12,7 @@ Create a button in index.handlebars that will submit the user input into the dat
 
         <p></p>
     </div>
-    <div class = "left col-sm-6" id = "avail">
+    <div class = " col-sm-6" id = "avail">
     <h1>TIME TO EAT DA BURGER!!</h1>
     <h2>Available burgers</h2>
     <ul>
@@ -38,6 +38,10 @@ Create a button in index.handlebars that will submit the user input into the dat
             <li>
                 {{this.id}}
                 {{this.burger_name}}
+                 <form action="/{{this.id}}?_method=PUT" method="POST">
+                <input type="hidden" name="ditched" value="true">
+                <button class="btn-primary" type="submit">Ditch It!</button>
+            </form>
             </li>
             
             {{/if}}
