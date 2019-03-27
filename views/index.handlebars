@@ -38,10 +38,7 @@ Create a button in index.handlebars that will submit the user input into the dat
             <li>
                 {{this.id}}
                 {{this.burger_name}}
-                 <form action="/{{this.id}}?_method=PUT" method="POST">
-                <input type="hidden" name="ditched" value="true">
-                <button class="btn-primary" type="submit">Ditch It!</button>
-            </form>
+                
             </li>
             
             {{/if}}
@@ -55,7 +52,7 @@ Create a button in index.handlebars that will submit the user input into the dat
 </div>
 
 <h2>ENTER YOUR BURGER OF CHOICE</h2>
-<form class="create-form" action="/" method="POST">
+<form class="create-form" action="/burger" method="POST">
 
     <div class="form-group">
         <label for="burg">CLICK ADD BURGER TO ORDER NOW!</label>

@@ -21,7 +21,7 @@ router.get("/", function (req, res) {
     });
 });
 
-router.post("/:id", function (req, res) {
+router.post("/burger", function (req, res) {
     burger.create([
         "burger_name", "devoured"
     ], [
@@ -29,7 +29,7 @@ router.post("/:id", function (req, res) {
         ], function () {
             res.redirect("/");
         });
-        console.log(req.body.devoured);
+        console.log(req.body.devoured+" this is req.body.devoured");
 });
 router.put("/:id", function (req, res) {
     console.log(req);
